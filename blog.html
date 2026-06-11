@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-acid-yellow">
+    <title>당산 유흥 블로그 | 찐 후기로 보는 당산 밤문화의 모든 것</title>
+    <meta name="description" content="당산 유흥 후기 블로그. 진짜 유저들이 직접 남긴 생생한 당산 유흥 정보를 블로그 형식으로 정리했다. 가격, 위치, 분위기까지 까발리는 브로들의 리얼 후기. 지금 확인하고 당산 밤문화 제대로 즐겨라.">
+    <meta name="keywords" content="당산 유흥, 당산 유흥 후기, 당산 밤문화, 당산 룸, 당산 가라오케, 당산 술집, 당산 유흥주점, 당산 후기, 당산 블로그">
+    <link rel="canonical" href="https://t3b07-ds-night-rv-2.vercel.app/blog">
+    <meta property="og:title" content="당산 유흥 블로그 | 찐 후기로 보는 당산 밤문화의 모든 것">
+    <meta property="og:description" content="당산 유흥 후기 블로그. 진짜 유저들이 직접 남긴 생생한 당산 유흥 정보를 블로그 형식으로 정리했다. 가격, 위치, 분위기까지 까발리는 브로들의 리얼 후기.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://t3b07-ds-night-rv-2.vercel.app/blog">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background: #111;
+            color: #e0e0e0;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        /* ===== BRUTALIST RAW STYLES ===== */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Impact', 'Arial Black', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #f4d03f;
+            margin-bottom: 15px;
+        }
+        h1 {
+            font-size: 3rem;
+            border-left: 8px solid #f4d03f;
+            padding-left: 20px;
+            margin: 30px 0;
+        }
+        h2 {
+            font-size: 2rem;
+            border-bottom: 3px dashed #f4d03f;
+            padding-bottom: 10px;
+        }
+        h3 {
+            font-size: 1.5rem;
+            color: #ff6b6b;
+        }
+        a {
+            color: #f4d03f;
+            text-decoration: underline wavy;
+            font-weight: bold;
+        }
+        a:hover {
+            color: #ff6b6b;
+            background: #222;
+        }
+        p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+        ul, ol {
+            margin: 20px 0;
+            padding-left: 30px;
+        }
+        li {
+            margin-bottom: 10px;
+            list-style-type: square;
+        }
+        /* ===== LAYOUT ===== */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+            .container {
+                padding: 0 10px;
+            }
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            border-bottom: 4px solid #f4d03f;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #f4d03f;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+        }
+        .logo a {
+            text-decoration: none;
+            color: #f4d03f;
+        }
+        .logo a:hover {
+            background: none;
+            color: #ff6b6b;
+        }
+        nav {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+        nav a {
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            text-decoration: none;
+            border: 2px solid #f4d03f;
+            padding: 8px 16px;
+            transition: 0.2s;
+        }
+        nav a:hover {
+            background: #f4d03f;
+            color: #111;
+        }
+        .hamburger-menu {
+            display: none;
+            font-size: 2rem;
+            color: #f4d03f;
+            cursor: pointer;
+            border: 2px solid #f4d03f;
+            padding: 5px 15px;
+        }
+        @media (max-width: 768px) {
+            nav {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                margin-top: 20px;
+                gap: 10px;
+            }
+            nav.active {
+                display: flex;
+            }
+            .hamburger-menu {
+                display: block;
+            }
+            .tel-link {
+                display: inline-block;
+                margin-top: 10px;
+                text-align: center;
+            }
+        }
+        .tel-link {
+            background: #ff6b6b;
+            color: #111;
+            padding: 10px 20px;
+            text-transform: uppercase;
+            font-weight: bold;
+            text-decoration: none;
+            border: none;
+            font-size: 1rem;
+            letter-spacing: 1px;
+        }
+        .tel-link:hover {
+            background: #f4d03f;
+            color: #111;
+        }
+        /* ===== BLOG POST STYLES ===== */
+        .blog-post {
+            background: #1a1a1a;
+            padding: 40px;
+            margin-bottom: 40px;
+            border: 2px solid #333;
+            box-shadow: 8px 8px 0 #f4d03f;
+        }
+        .blog-post .meta {
+            color: #888;
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+            border-left: 4px solid #ff6b6b;
+            padding-left: 15px;
+        }
+        .blog-post .meta span {
+            display: inline-block;
+            margin-right: 20px;
+        }
+        .blog-post .content {
+            margin-top: 30px;
+        }
+        .blog-post .content blockquote {
+            border-left: 6px solid #f4d03f;
+            padding-left: 20px;
+            margin: 30px 0;
+            font-style: italic;
+            color: #ccc;
+            background: #222;
+            padding: 20px;
+        }
+        .blog-post .content .highlight-box {
+            background: #222;
+            border: 2px dashed #ff6b6b;
+            padding: 20px;
+            margin: 30px 0;
+        }
+        .blog-post .content .highlight-box strong {
+            color: #f4d03f;
+        }
+        .blog-post .content .price-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+        }
+        .blog-post .content .price-table th,
+        .blog-post .content .price-table td {
+            border: 2px solid #333;
+            padding: 15px;
+            text-align: left;
+        }
+        .blog-post .content .price-table th {
+            background: #f4d03f;
+            color: #111;
+            text-transform: uppercase;
+        }
+        .blog-post .content .price-table td {
+            background: #1a1a1a;
+        }
+        .blog-post .content .price-table tr:hover td {
+            background: #2a2a2a;
+        }
+        .blog-post .content .tip-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        .blog-post .content .tip-list li {
+            padding: 10px 0 10px 30px;
+            position: relative;
+            border-bottom: 1px solid #333;
+        }
+        .blog-post .content .tip-list li::before {
+            content: '>>';
+            color: #f4d03f;
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+        .blog-post .content .verdict {
+            background: #111;
+            border: 4px solid #f4d03f;
+            padding: 30px;
+            margin: 40px 0;
+            text-align: center;
+        }
+        .blog-post .content .verdict h3 {
+            color: #f4d03f;
+            margin-bottom: 15px;
+        }
+        .blog-post .content .verdict p {
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+        .blog-post .content .image-placeholder {
+            background: #2a2a2a;
+            height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 30px 0;
+            border: 2px solid #333;
+            font-size: 1.2rem;
+            color: #666;
+            text-transform: uppercase;
+        }
+        @media (max-width: 768px) {
+            .blog-post {
+                padding: 20px;
+            }
+            .blog-post .content .price-table {
+                font-size: 0.8rem;
+            }
+            .blog-post .content .price-table th,
+            .blog-post .content .price-table td {
+                padding: 8px;
+            }
+        }
+        /* ===== FOOTER ===== */
+        footer {
+            border-top: 4px solid #f4d03f;
+            padding: 30px 0;
+            margin-top: 60px;
+            text-align: center;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        footer a {
+            color: #f4d03f;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo"><a href="/">당산 유흥 후기</a></div>
+            <div class="hamburger-menu" onclick="document.querySelector('nav').classList.toggle('active')">☰</div>
+            <nav>
+                <a href="/">홈</a>
+                <a href="/blog">블로그</a>
+                <a href="/reviews">후기</a>
+                <a href="/contact">문의</a>
+                <a href="tel:010-1234-5678" class="tel-link">전화 문의</a>
+            </nav>
+        </header>
+
+        <main>
+            <h1>당산 유흥 블로그</h1>
+            <p style="font-size: 1.2rem; margin-bottom: 40px;">여기는 가짜 정보나 광고성 글이 아닌, <strong style="color: #f4d03f;">진짜 유저들의 생생한 당산 유흥 후기</strong>를 블로그 형식으로 정리한 공간이다. 당산 밤문화에 대한 모든 것, 여기서 다 까발린다.</p>
+
+            <article class="blog-post">
+                <div class="meta">
+                    <span>✍️ 작성자: 브로</span>
+                    <span>📅 날짜: 2024-03-15</span>
+                    <span>🏷️ 태그: 당산 유흥, 당산 룸, 당산 가라오케</span>
+                </div>
+                <h2>당산 유흥, 진짜 가성비 끝판왕은 어디냐? 찐 내돈내산 후기</h2>
+                
+                <div class="content">
+                    <p>야, 브로들. 오늘은 진짜 핵심만 때려박는다. 당산에서 유흥 좀 즐겨본 형님으로서, <strong>가성비, 분위기, 서비스</strong> 세 가지 다 잡는 곳이 어딘지 까발려줄게. 인터넷에 떠도는 광고글은 쳐다보지 마라. 다 돈 받고 쓴 거다. 이건 내가 직접 발로 뛰고 돈 꼬라박은 후기다.</p>
+
+                    <p>당산은 원래 선유도 쪽 공장 지대라 그런지, 요즘 핫한 신흥 유흥가로 떠오르고 있다. 여의도나 강남보다 술값도 싸고, 아가씨들 퀄리티도 괜찮은 곳이 많다. 근데 문제는 <strong>사기꾼 업소</strong>도 같이 생겼다는 거다. 그래서 내가 직접 검증해줄게.</p>
+
+                    <h3>1. 당산 룸살롱: 분위기 깡패 '더블랙'</h3>
+                    <p>위치: 당산역 4번 출구에서 도보 5분. 건물 외관은 좀 올드한데 안은 완전 리뉴얼됐더라. <strong>가격: 1시간 기준 15만 원 (주류 별도)</strong>. 참고로 이 가격에 2차까지 부르면 25만 원 정도 나온다. 서비스: 마담이 친절하고, 아가씨들도 리드 잘해줌. 단점은 주차가 빡센데, 발렛 5천 원이면 해결됨.</p>
+
+                    <div class="image-placeholder">[이미지: 더블랙 내부 전경]</div>
+
+                    <blockquote>
+                        "처음 갔을 때 외관 보고 실망했는데, 문 열자마자 '오' 소리 나오더라. 인테리어에 진심인 듯. 다음 날까지 기억난다."
+                    </blockquote>
+
+                    <h3>2. 당산 가라오케: 가성비 1위 '노래방 2000'</h3>
+                    <p>여기는 완전 대박임. <strong>2시간에 8만 원</strong>이면 방 하나 박차고 노래 부르고 술도 먹는다. 물론 안주는 별도지만, 옆에 편의점 있어서 사 들고 가도 됨. 시스템: 리모콘으로 노래 검색, 최신곡 다 있음. 아쉬운 점: 방음이 약해서 옆방 소리가 들리는데, 오히려 더 신남 ㅋㅋㅋ.</p>
+
+                    <div class="highlight-box">
+                        <strong>💡 꿀팁:</strong> '노래방 2000'은 평일 낮 시간에 가면 <strong>50% 할인</strong> 이벤트 함. 대학생들도 많이 옴. 단, 금요일 밤에는 예약 필수다. 안 하면 1시간 기다려야 함.
+                    </div>
+
+                    <h3>3. 당산 술집: 분위기 좋은 '술익는 마을'</h3>
+                    <p>여기는 유흥보단 <strong>혼술, 회식, 데이트</strong>용으로 딱이다. 막걸리와 전골이 존맛. 가격: 1인당 3만 원이면 배 터짐. 분위기: 조명 어둡고, 벽돌 인테리어. 단점: 자리가 좁아서 4명 이상 가면 불편함. 하지만 2인이면 최고임.</p>
+
+                    <table class="price-table">
+                        <thead>
+                            <tr>
+                                <th>업소명</th>
+                                <th>업종</th>
+                                <th>가격대 (1인 기준)</th>
+                                <th>추천 포인트</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>더블랙</td>
+                                <td>룸살롱</td>
+                                <td>15~25만 원</td>
+                                <td>인테리어, 서비스</td>
+                            </tr>
+                            <tr>
+                                <td>노래방 2000</td>
+                                <td>가라오케</td>
+                                <td>4~8만 원</td>
+                                <td>가성비, 최신곡</td>
+                            </tr>
+                            <tr>
+                                <td>술익는 마을</td>
+                                <td>술집</td>
+                                <td>3~5만 원</td>
+                                <td>분위기, 안주</td>
+                            </tr>
+                            <tr>
+                                <td>클럽 M</td>
+                                <td>클럽</td>
+                                <td>2~7만 원</td>
+                                <td>춤, 음악</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h3>내가 생각하는 당산 유흥 필수 꿀팁 5가지</h3>
+                    <ul class="tip-list
+</body>
+</html>
